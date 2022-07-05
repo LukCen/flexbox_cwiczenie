@@ -1,0 +1,74 @@
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+.container {
+    box-sizing: border-box;
+    height: 45%;
+    width: 99%;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    gap: 1px;
+    
+    
+}
+
+.container div {
+
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    
+    
+}
+
+.container2 {
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    height: 45%;
+    width: 99%;
+    border: 1px solid green;
+    bottom: 5px;
+    gap: 1px;
+    
+}
+
+.container2 div {
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 1px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container2 div:nth-of-type(2){
+    order: -1;
+}
+
+.container2 div:nth-of-type(4) {
+    align-self: flex-end;
+    
+}
+
+.container2 div:nth-of-type(5) {
+    align-self: center;
+}
