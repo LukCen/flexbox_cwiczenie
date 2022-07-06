@@ -7,57 +7,46 @@ body {
     
 }
 
-.container {
+.container, .container2 {
+    display: flex;
     box-sizing: border-box;
     height: 45%;
     width: 99%;
     border: 1px solid green;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
     gap: 1px;
-    
-    
 }
 
-.container div {
+.container {
+    
+    position: fixed;
+    justify-content: space-around;
+}
 
+.container div, .container2 div {
     display: flex;
     position: relative;
-    width: 100px;
-    height: 100px;
     background-color: red;
     justify-content: center;
     align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.container div {
     margin: auto;
-    
-    
     
 }
 
 .container2 {
-    box-sizing: border-box;
-    display: flex;
     position: absolute;
-    height: 45%;
-    width: 99%;
-    border: 1px solid green;
     bottom: 5px;
-    gap: 1px;
+    
     
 }
 
 .container2 div {
-    display: flex;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: red;
     margin: 1px;
-    justify-content: center;
-    align-items: center;
-
-
+    
 }
 
 .container2 div:nth-of-type(2){
