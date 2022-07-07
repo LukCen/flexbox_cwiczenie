@@ -1,10 +1,11 @@
 
 body {
-    height: 100%;
-    width: 100%;
     overflow: hidden;
-    
-    
+}
+
+.container {
+    position: fixed;
+    justify-content: space-around;
 }
 
 .container, .container2 {
@@ -16,10 +17,9 @@ body {
     gap: 1px;
 }
 
-.container {
-    
-    position: fixed;
-    justify-content: space-around;
+
+.container div {
+    margin: auto;
 }
 
 .container div, .container2 div {
@@ -32,15 +32,10 @@ body {
     height: 100px;
 }
 
-.container div {
-    margin: auto;
-    
-}
 
 .container2 {
     position: absolute;
     bottom: 5px;
-    
     
 }
 
